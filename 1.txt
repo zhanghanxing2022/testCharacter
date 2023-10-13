@@ -1,0 +1,68 @@
+iteration 279
+0
+epoch=0,loss = 1.49862438,trainAcc=0.57571685,testAcc = 0.75940860
+1
+epoch=1,loss = 0.64425200,trainAcc=0.82974910,testAcc = 0.86559140
+2
+epoch=2,loss = 0.38828277,trainAcc=0.89501195,testAcc = 0.90591398
+3
+epoch=3,loss = 0.26462091,trainAcc=0.93040621,testAcc = 0.91129032
+4
+epoch=4,loss = 0.20588319,trainAcc=0.94728196,testAcc = 0.92876344
+5
+epoch=5,loss = 0.16810612,trainAcc=0.95534648,testAcc = 0.93951613
+6
+epoch=6,loss = 0.14394724,trainAcc=0.96281362,testAcc = 0.93682796
+7
+epoch=7,loss = 0.12338935,trainAcc=0.96968339,testAcc = 0.95295699
+8
+epoch=8,loss = 0.11000994,trainAcc=0.97072879,testAcc = 0.96236559
+9
+epoch=9,loss = 0.09919161,trainAcc=0.97416368,testAcc = 0.96370968
+10
+epoch=10,loss = 0.08652286,trainAcc=0.97983871,testAcc = 0.95698925
+11
+epoch=11,loss = 0.08211259,trainAcc=0.97879331,testAcc = 0.95833333
+12
+epoch=12,loss = 0.07415765,trainAcc=0.98342294,testAcc = 0.96639785
+13
+epoch=13,loss = 0.06811141,trainAcc=0.98521505,testAcc = 0.96908602
+14
+epoch=14,loss = 0.06301697,trainAcc=0.98715651,testAcc = 0.96505376
+15
+epoch=15,loss = 0.05971422,trainAcc=0.98655914,testAcc = 0.95967742
+16
+epoch=16,loss = 0.05532550,trainAcc=0.98864994,testAcc = 0.96102151
+17
+epoch=17,loss = 0.05085130,trainAcc=0.99059140,testAcc = 0.96236559
+18
+epoch=18,loss = 0.04819666,trainAcc=0.99133811,testAcc = 0.96639785
+19
+epoch=19,loss = 0.04416054,trainAcc=0.99238351,testAcc = 0.96505376
+20
+epoch=20,loss = 0.04134427,trainAcc=0.99268220,testAcc = 0.96236559
+21
+epoch=21,loss = 0.03964016,trainAcc=0.99447431,testAcc = 0.96639785
+22
+epoch=22,loss = 0.03704420,trainAcc=0.99522103,testAcc = 0.96774194
+23
+epoch=23,loss = 0.03539990,trainAcc=0.99551971,testAcc = 0.96370968
+24
+epoch=24,loss = 0.03432500,trainAcc=0.99566906,testAcc = 0.96236559
+25
+epoch=25,loss = 0.03268325,trainAcc=0.99596774,testAcc = 0.96505376
+26
+epoch=26,loss = 0.03075243,trainAcc=0.99686380,testAcc = 0.96370968
+27
+epoch=27,loss = 0.03010992,trainAcc=0.99746117,testAcc = 0.96639785
+28
+epoch=28,loss = 0.02914658,trainAcc=0.99716249,testAcc = 0.95967742
+29
+epoch=29,loss = 0.02748430,trainAcc=0.99731183,testAcc = 0.96908602
+30
+epoch=30,loss = 0.02713249,trainAcc=0.99686380,testAcc = 0.96639785
+31
+epoch=31,loss = 0.02559251,trainAcc=0.99790920,testAcc = 0.97043011
+32
+epoch=32,loss = 0.02470593,trainAcc=0.99775986,testAcc = 0.95967742
+33

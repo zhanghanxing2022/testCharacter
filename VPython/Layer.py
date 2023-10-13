@@ -199,7 +199,7 @@ class Dense(Layer):  # epsilon
         self.abort()
         pass
     def parameterDecay(self, sum: int,  lr, regularization: Regularization = None,):
-        if regularization is not None & self.frozen==False:
+        if regularization is not None and self.frozen==False:
             self.weights = regularization(data=self.weights, num=sum)
             self.bias = regularization(data=self.bias, num=sum)
         pass
@@ -222,9 +222,9 @@ class Dense(Layer):  # epsilon
                 subgroup.attrs.create("name", self.name, dtype=dt)
                 subgroup.attrs.create("bias", self.biasUsed)
                 subgroup.attrs.create("neurons", self.neurons)
-                subgroup.create_dataset(name="weights", data=np.array(self.weights, dtype=np.float))
+                subgroup.create_dataset(name="weights", data=np.array(self.weights, dtype=np.float64))
                 if self.biasUsed:
-                    subgroup.create_dataset(name="bias", data=np.array(self.bias, dtype=np.float))
+                    subgroup.create_dataset(name="bias", data=np.array(self.bias, dtype=np.float64))
 
         dict_1 = {"Layer": "Dense", "neurons": self.neurons, "activator": self.activation.name, "name": self.name,
                   "weights": self.weights}
@@ -259,7 +259,7 @@ class Convolution2D(Layer):
     def __init__(self, inputShape: tuple = None, filters: int = None, kernel: tuple = None, activation: str = None,
                  biasUsed: bool = False, name: str = None):
         self.layer = 'Convolution2D'
-        self.frozen == False
+        self.frozen = False
         self.loss_div_bias = None
         self.act_div_res = None
         self.loss_div_weights = None
@@ -360,7 +360,7 @@ class Convolution2D(Layer):
 
         self.abort()
     def parameterDecay(self, sum: int,  lr, regularization: Regularization = None,):
-        if regularization is not None & self.frozen == False:
+        if regularization is not None and self.frozen == False:
             self.weights = regularization(data=self.weights, num=sum)
             self.bias = regularization(data=self.bias, num=sum)
         pass
@@ -386,9 +386,9 @@ class Convolution2D(Layer):
                 subgroup.attrs.create("bias", self.biasUsed)
 
 
-                subgroup.create_dataset(name="weights", data=np.array(self.weights, dtype=np.float))
+                subgroup.create_dataset(name="weights", data=np.array(self.weights, dtype=np.float64))
                 if self.biasUsed:
-                    subgroup.create_dataset(name="bias", data=np.array(self.bias, dtype=np.float))
+                    subgroup.create_dataset(name="bias", data=np.array(self.bias, dtype=np.float64))
         dict_1 = {"Layer": "Convolution2D", "filters": self.filters, "kernel": self.kernel, "activator":
             self.activation.name, "name": self.name, "weights": self.weights}
         if self.biasUsed:
