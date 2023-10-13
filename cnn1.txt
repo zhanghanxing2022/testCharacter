@@ -1,0 +1,8 @@
+begin
+begin
+epoch=0,loss = 2.48714603,trainAcc=0.10110514,testAcc = 0.19892473
+epoch=1,loss = 1.67246652,trainAcc=0.48909797,testAcc = 0.65456989
+epoch=2,loss = 0.81855083,trainAcc=0.75029869,testAcc = 0.81451613
+epoch=3,loss = 0.59058911,trainAcc=0.81974313,testAcc = 0.83198925
+epoch=4,loss = 0.47805317,trainAcc=0.85573477,testAcc = 0.87231183
+epoch=5,loss = 0.40168234,trainAcc=0.87828554,testAcc = 0.88172043
