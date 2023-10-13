@@ -270,6 +270,7 @@ class Convolution2D(Layer):
         self.weights = None
         self.bias = None
         self.outShape = None
+        self.act_div_res_list=[]
         if name is None:
             self.name = "Convolution2D" + str(Convolution2D.order)
         else:
@@ -320,6 +321,7 @@ class Convolution2D(Layer):
             self.result = self.result + self.bias
         self.result = self.activation(self.result)
         self.act_div_res = self.activation.derivation(self.result, all=False)
+        self.act_div_res_list.append(self.act_div_res)
         self.loss_div_weights = np.zeros_like(self.weights)
         return self.result
 
@@ -337,6 +339,7 @@ class Convolution2D(Layer):
 
         self.backPropagationW = self.backPropagationW + self.loss_div_weights
         self.backPropagationB = self.backPropagationB + self.loss_div_bias
+        self.act_div_res_list=[]
 
         backPropagation = np.zeros(self.inputShape)
         k_180 = np.rot90(self.weights, 2, (2, 3))
